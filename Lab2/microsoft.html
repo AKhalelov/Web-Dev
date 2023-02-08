@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Microsoft</title>
+    <style>
+
+        body {
+            height: 150vh;
+        }
+
+        .up-side {
+            height: 54px;
+            width: 965px;
+            color: #000000;
+            font: 13px 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0px 0px 2px;
+            padding: 0px 24px;
+            background-color: white;
+        }
+
+        .micro-logo {
+            height: 54px;
+            width: 137px;
+            color: #262626;
+            margin: 1px 0px 0px;
+            padding: 16px 6px 16px 10px;
+            background-color: transparent;
+            box-sizing: inherit;
+        }
+
+        #img-micro {
+            display: block;
+            margin-left: 53.5px;
+            margin-top: -11px;
+        }
+
+        .words {
+            padding: 10px;
+            margin-top: -48px;
+            height: 48px;
+            width: 1000px;
+            color: #262626;
+            text-decoration: none;
+            border: 1px solid transparent;
+            position: relative;
+        }
+
+        .micro-365 {
+            color: #262626;
+            text-decoration: none;
+            margin-left: 181px;
+        }
+
+        .office, .windows, .podd {
+            color: #262626;
+            text-decoration: none;
+            margin-left: 17px;
+        }
+
+        .micro-365:hover, .office:hover, .windows:hover, .podd:hover {
+            text-decoration: underline;
+        }
+
+        button, .selector, .product {
+            border: medium none;
+            background-image: none;
+            float: left;
+            background-color: transparent;
+            font: 13px 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .end-end {
+            border: medium none;
+            background-image: none;
+            float: left;
+            background-color: transparent;
+            font: 13px 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #000000;
+            text-decoration: none;
+            margin-left: 260px;
+            margin-top: -20px;
+        }
+
+        .right {
+            margin-left: 1055px;
+            height: 54px;
+            width: 275.55px;
+            margin-top: -60px;
+        }
+
+        button:hover, span:hover {
+            text-decoration: underline;
+        }
+
+        .photo {
+            width: 1536px;
+            margin-left: -32px;
+            margin-top: -10px;
+        }
+
+        .samle {
+            color: white;
+            font-family: inherit;
+            margin-top: -375px;
+            margin-left: 95px;
+            font-size: 38px;
+        }
+
+        #word-box {
+            font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: white;
+            font-size: 16px;
+            margin-left: 95px;
+            margin-top: -25px;
+        }
+
+        .button-check {
+            width: 240.56px;
+            height: 39.2px;
+            text-align: unset;
+            font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 13%), 0 0 0.0625rem 0 rgb(0 0 0 / 11%);
+            background-color: #0067b8;
+            color: white;
+            border-color: #0067b8;
+            text-decoration: none;
+            margin-left: 95px;
+            margin-top: 25px;
+            box-radius: 7px;
+        }
+
+        .button-check:hover {
+            cursor: pointer;
+        }
+
+        .first {
+            margin-top: 560px;
+            margin-left: 70px;
+            width: 325px;
+        }
+
+        .second, .third, .fourth {
+            width: 325px;
+            margin-left: 18px;
+        }
+
+        .word-p {
+            font-size: 28px;
+            margin-left: 70px;
+            margin-top: 10px;
+            font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+
+        .sentences {
+            font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+            color: #000;
+            margin-left: 70px;
+            font-size: 16px;
+            max-height: 70px;
+            display: block;
+        }
+
+        .word-p2 {
+            font-size: 28px;
+            margin-left: 420px;
+            margin-top: -155px;
+            font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+
+        .sentences2 {
+            font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+            color: #000;
+            margin-left: 420px;
+            font-size: 16px;
+            max-height: 70px;
+            display: block;
+            margin-top: -153px;
+        }
+
+        .for-1 {
+            color: #0067b8;
+            font-size: 16px;
+            font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+            text-decoration: none;
+        }
+
+        .for-1:hover {
+            text-decoration: underline;
+        }
+
+        .left-1 {
+            margin-top: 160px;
+            margin-left: 70px;
+        }
+
+        .left-2 {
+            margin-top: -22px;
+            margin-left: 250px;
+        }
+
+        .left-3 {
+            margin-left: 420px;
+            margin-top: 15px;
+        }
+
+        .word-p3 {
+            font-size: 28px;
+            margin-left: 765px;
+            margin-top: -170px;
+            font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+
+        .sentences3 {
+            font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+            color: #000;
+            margin-left: 765px;
+            font-size: 16px;
+            max-height: 70px;
+            display: block;
+            margin-top: 0px;
+        }
+
+        .left-4 {
+            margin-left: 765px;
+        }
+
+        .word-p4 {
+            font-size: 28px;
+            margin-left: 1112px;
+            margin-top: -170px;
+            font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+
+        .sentences4 {
+            font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+            color: #000;
+            margin-left: 1112px;
+            font-size: 16px;
+            max-height: 70px;
+            display: block;
+            margin-top: 0px;
+        }
+
+        .left-5 {
+            margin-top: 10px;
+            margin-left: 1112px;
+        }
+
+        .end-end {
+            margin-top: -18px;
+        }
+
+        .end-end:hover {
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+<div class="up-side">
+    <a class="micro-logo" href="https://www.microsoft.com/ru-kz/" title="Microsoft"> <img id="img-micro"
+                                                                                          src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+                                                                                          height="23px" width="108px">
+    </a>
+    <div class="words">
+        <a class="micro-365" href="https://www.microsoft.com/ru-ru/microsoft-365?rtc=1"> Microsoft 365</a>
+        <a class="office" href="https://www.microsoft.com/ru-ru/microsoft-365/microsoft-office?rtc=1"> Office</a>
+        <a class="windows" href="https://www.microsoft.com/ru-ru/windows/"> Windows</a>
+        <a class="podd" href="https://support.microsoft.com/ru-kz">Поддержка </a>
+    </div>
+    <div class="right">
+        <button type="button"><span class="product">Продукты Майкрософт</span><select class="selector"></select>
+        </button>
+        <button id="search-button">Поиск</button>
+        <a class="end-end" href="https://www.microsoft.com/rpsauth/v1/account/SignIn?ru=https%3A%2F%2Fwww.microsoft.com%2Fru-kz%2F">Войти</a>
+    </div>
+    <a href="https://support.microsoft.com/ru-ru/windows#pchealthcheck">
+        <img class="photo" src="resources/big-img.jpeg">
+    </a>
+    <p class="samle"> Разработано для жизни — <br> сегодня и в будущем</p>
+    <div id="word-box"> Следующее поколение игр. Ваши цели. Друзья и семья. С <br> Windows 11 вы станете еще ближе к
+        тому, что успели <br> полюбить.
+    </div>
+    <a href="https://www.microsoft.com/ru-ru/windows/windows-11?icid=mscom_marcom_H1a_Win11PChlth#pchealthcheck"><input
+            class="button-check" type="button" value="Проверьте, готов ли ваш ПК"></a>
+</div>
+
+
+<img class="first"
+     src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-M365-Icon-Bounce-Word-Merch?wid=380&hei=213&fit=crop">
+<img class="second"
+     src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-MSFT-CP-Edge?wid=380&hei=213&fit=crop">
+<img class="third"
+     src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Soft-CP-OneDriveCampaignRefresh-2?wid=380&hei=213&fit=crop">
+<img class="fourth"
+     src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-PC-SMB-OneNote?wid=380&hei=213&fit=crop">
+<p class="word-p"><strong> Microsoft 365 </strong></p>
+<p class="sentences"> Приложения и функции, которые помогут <br>вам воплотить идеи в реальность, <br> оставаться в
+    безопасности и <br>сосредоточиться на важных вещах в <br>жизни.</p>
+<p class="word-p2"><strong> Microsoft Edge</strong></p>
+<div class="left-1">
+    <a class="for-1"
+       href="https://www.microsoft.com/ru-kz/microsoft-365/p/microsoft-365-personal/cfq7ttc0k5bf?icid=mscom_marcom_CPH1a_M365Personal">
+        Для 1 человека <strong> > </strong> </a>
+</div>
+<div class="left-2">
+    <a class="for-1"
+       href="https://www.microsoft.com/ru-kz/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?icid=mscom_marcom_CPH1b_M365Family">
+        До 6 человек <strong> ></strong></a>
+    <br>
+</div>
+<p class="sentences2">Потрясающая производительность, больше <br>конфиденциальности, продуктивности и <br>
+    дополнительных возможностей. </p>
+<div class="left-3">
+    <a class="for-1" href="https://www.microsoft.com/ru-ru/edge?form=MI13F3&OCID=MI13F3">Скачать <strong> ></strong>
+    </a>
+</div>
+<p class="word-p3"><strong> Microsoft OneDrive</strong></p>
+<p class="sentences3"> Сохраняйте свои файлы и фотографии на <br> OneDrive — они будут доступны с любого <br> устройства
+    и где угодно.</p>
+<div class="left-4">
+    <a class="for-1"
+       href="https://www.microsoft.com/ru-ru/microsoft-365/onedrive/online-cloud-storage?icid=mscom_marcom_CPH3a_OneDrive">
+        Подробнее <strong> ></strong></a>
+</div>
+<p class="word-p4"><strong> OneNote</strong></p>
+<p class="sentences4"> Приведите свои заметки и дела в порядок.</p>
+<div class="left-5">
+    <a class="for-1"
+       href="https://www.microsoft.com/ru-ru/microsoft-365/onenote/digital-note-taking-app?icid=mscom_marcom_CPH4a_OneNote">
+        Узнать больше <strong> ></strong></a>
+</div>
+</body>
+</html>
