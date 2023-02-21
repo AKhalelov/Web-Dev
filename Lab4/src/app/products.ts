@@ -8,9 +8,9 @@ export interface Product {
 export const products = [
   {
     id: 1,
-    name: 'Phone XL',
-    price: 799,
-    description: 'A large phone with one of the best screens'
+    name: 'iPhone 14 Pro Max 256Gb purple',
+    price: 669886,
+    description: "A great phone with one of the best cameras",
   },
   {
     id: 2,
