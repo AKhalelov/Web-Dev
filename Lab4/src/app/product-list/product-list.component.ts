@@ -10,9 +10,10 @@ import { products } from '../products';
 export class ProductListComponent {
   products = products;
 
-  share(a:number) {
-    window.open(`https://api.whatsapp.com/send/?phone=77073130212&text=I am sharing this product ${products[a - 1]['url']}&type=phone_number&app_absent=0`);
+  share(sh:string) {
+    window.open(`https://t.me/share/url?url=${sh}&text=xssxcfscxscsc`);
   }
+
   onNotify() {
     window.alert('You will be notified when the product goes on sale')
   }
