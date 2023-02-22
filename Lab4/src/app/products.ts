@@ -5,45 +5,45 @@ export interface Product {
   description: string,
   url: string, 
   image: string,
-  rate: string;
+  rate: number;
 }
 
 export const products = [
   {
     id: 1,
-    name: 'iPhone 14 Pro Max 256Gb purple',
-    price: 669770,
+    name: 'Toaster Bosch TAT3P420',
+    price: 26990,
     description: "A great phone with one of the best cameras",
-    url: 'https://kaspi.kz/shop/p/apple-iphone-14-pro-max-256gb-fioletovyi-106363342/?c=750000000#!/item',
-    image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h00/h18/62948780834846/apple-iphone-14-pro-max-128gb-fioletovyj-106363342-1.jpg',
-    rate: '5'
+    url: 'https://kaspi.kz/shop/p/bosch-tat3p420-serebristyi-chernyi-100414535/?c=750000000#!/item',
+    image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h55/h12/51375785705502/bosch-tat-3p420-serebristyj-100414535-1-Container.jpg',
+    rate: 10
   },
   {
     id: 2,
-    name: 'Mod Beds',
-    price: 139500,
-    description: 'The Mod Bunk bed is a low line bunk bed and has great versatility & can be split into two beds & bookcase!',
-    url: 'https://kaspi.kz/shop/p/mod-beds-284496-140x200-sm-s-matrasom-seryi-106755918/?c=750000000#!/item',
-    image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hd8/h04/63016362115102/mod-beds-284496-140x200-sm-s-matrasom-seryj-106755918-1.jpg',
-    rate: '5'
+    name: 'Amazon Kindle e-book',
+    price: 99000,
+    description: 'Amazon Kindle Paperwhite 2021 e-reader. Compared to the previous generation, the screen has increased to 6.8 inches and at the same time with a resolution of 300 PPI.',
+    url: 'https://kaspi.kz/shop/p/amazon-kindle-paperwhite-2021-chernyi-102838488/?c=750000000#!/item',
+    image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h09/h23/47093254520862/amazon-kindle-paper-2021-chernyi-102838488-1.jpg',
+    rate: 8
   },
   {
     id: 3,
-    name: 'Smart watch Samsung Galaxy Watch 4 Classic',
-    price: 95890,
-    description: 'Samsung smart watches are not just a gadget, but your faithful companion on the way to achieving goals and self-improvement.',
-    url: 'https://kaspi.kz/shop/p/samsung-galaxy-watch-4-classic-sm-r890nzkacis-46-mm-chernyi-chernyi-102170938/?c=750000000#!/item',
-    image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h6c/h85/62047597592606/samsung-galaxy-watch-4-classic-sm-r890-cernyj-102170938-1-Container.jpg',
-    rate: '5'
+    name: 'Multicooker REDMOND RMC-M252 silver',
+    price: 43660,
+    description: 'The Redmond RMC-M252 multicooker has relatively compact dimensions (27.5x27.5x29.5 cm), while its power is 860 watts.',
+    url: 'https://kaspi.kz/shop/p/redmond-rmc-m252-serebristyi-3300349/?c=750000000#!/item',
+    image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hdc/h9e/50282547707934/redmond-rmc-m252-serebristyj-3300349-1-Container.jpg',
+    rate: 9
   },
   {
     id: 4, 
-    name: 'Xiaomi Soocas H5 hair dryer',
-    price: 20590,
-    description: 'Xiaomi SOOCAS H5 is a 1800W hair dryer with an ergonomic design.',
-    url: 'https://kaspi.kz/shop/p/xiaomi-soocas-h5-fen-1800-w-101050689/?c=750000000#!/item',
-    image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h52/hf8/33990323273758/xiaomi-soocas-h5-fen-1800-w-101050689-1.jpg',
-    rate: '5'
+    name: 'Juicer CENTEK CT-1209 silver',
+    price: 19990,
+    description: 'The Centek CT-1209 centrifugal juicer will be an excellent addition to your small household appliances for the kitchen and will give you the opportunity to delight your household with freshly squeezed juices every day.',
+    url: 'https://kaspi.kz/shop/p/centek-ct-1209-serebristyi-100303380/?c=750000000#!/item',
+    image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/he9/h79/32621809172510/centek-ct-1209-serebristyi-100303380-1.jpg',
+    rate: 9
   },
   {
     id: 5, 
@@ -52,25 +52,25 @@ export const products = [
     description: 'The appearance of the Centek CT-1164 carob coffee maker will turn the process of tasting the corresponding drink into a real pleasure.',
     url: 'https://kaspi.kz/shop/p/kofevarka-centek-ct-1164-serebristyi-chernyi-100358682/?c=750000000#!/item',
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h13/h18/51251427639326/centek-ct-1164-serebristyj-100358682-1-Container.jpg',
-    rate: '5'
+    rate: 10
   },
   {
     id: 6, 
-    name: 'Apple MacBook Pro 14 gray',
-    price: 993990,
-    description: 'The stunning 14.2-inch Liquid Retina XDR display and a wide range of ports add to the benefits.',
-    url: 'https://kaspi.kz/shop/p/apple-macbook-pro-14-mkgp3-seryi-102866247/?c=750000000#!/item',
-    image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hbf/h8a/47153374199838/apple-macbook-pro-14-mkgp3-seryj-102866247-1.jpg',
-    rate: '5'
+    name: 'Smart watch Apple Watch SE',
+    price: 167990,
+    description: 'All the features you need to stay active, healthy and connected. Large Retina display. Fall detection function.',
+    url: 'https://kaspi.kz/shop/p/apple-watch-se-2nd-gen-40-mm-zolotistyi-106362759/?c=750000000#!/item',
+    image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h97/h46/62711073407006/apple-watch-se-2nd-generation-40-mm-zolotistyj-106362759-1.jpg',
+    rate: 10
   },
   {
     id: 7, 
-    name: 'Air conditioner Atlantic ASAFA-12',
-    price: 180990,
-    description: 'Split system Atlantic ASAFA-12HRN8-S is a multifunctional device that can easily cope not only with cooling, but also with heating, dehumidification and ventilation of the air flow.',
-    url: 'https://kaspi.kz/shop/p/atlantic-asafa-12hrn8-s-montazhnyi-komplekt-4201112/?c=750000000#!/item',
-    image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hf4/h3b/31671049912350/atlantic-asafa-12hrn1-s-serebristyj-montaznyj-komplekt-4201112-1-Container.jpg',
-    rate: '5'
+    name: 'Maxwell MW-1657 coffee maker',
+    price: 11950,
+    description: 'The MAXWELL MW 1657 coffee maker is a compact device that can easily fit on a table in a kitchen or small office.',
+    url: 'https://kaspi.kz/shop/p/kofevarka-maxwell-mw-1657-chernyi-4400322/?c=750000000#!/item',
+    image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h3c/h78/31584897957918/maxwell-mw-1657-black-4400322-1-Container.jpg',
+    rate: 9
   },
   {
     id: 8, 
@@ -79,7 +79,7 @@ export const products = [
     description: 'The Canon EOS M50 Mark II kit 15-45mm IS STM interchangeable-lens camera is a mirrorless model that delivers crisp detail and a seamless content creation process from capture to publish.',
     url: 'https://kaspi.kz/shop/p/canon-eos-m50-mark-ii-kit-ef-m-15-45mm-f-3-5-6-3-is-stm-chernyi-102026887/?c=750000000#!/item',
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hc2/h32/68844292374558/canon-eos-m50-mark-ii-kit-ef-m-15-45mm-f-3-5-6-3-is-stm-chernyi-102026887-1.jpg',
-    rate: '5'
+    rate: 9
   },
   {
     id: 9, 
@@ -88,16 +88,16 @@ export const products = [
     description: 'Slim and light backlit 10th generation Kindle in black. The touch screen does not glare even in bright sunlight.',
     url: 'https://kaspi.kz/shop/p/amazon-kindle-10-chernyi-101391295/?c=750000000#!/item',
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hd2/h3d/33861602246686/amazon-kindle-10-cernyj-101391295-1-Container.jpg',
-    rate: '5'
+    rate: 8
   },
   {
     id: 10, 
-    name: 'TV Xiaomi Mi TV P1 50',
-    price: 244990,
-    description: 'The innovative three-sided bezel-less design provides a higher screen-to-body ratio and 178° viewing angles for a more realistic picture and a more enjoyable viewing experience.',
-    url: 'https://kaspi.kz/shop/p/xiaomi-mi-tv-p1-50-l50m6-6arg-127-sm-chernyi-105324626/?c=750000000#!/item',
-    image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h93/he8/51568662249502/xiaomi-l50m6-6arg-cernyj-105324626-1.jpg',
-    rate: '5'
+    name: 'Instant Camera Instax MINI 11',
+    price: 60700,
+    description: 'The FujiFilm Instax mini 11 instant camera, presented in a pretty soft purple body color, has the most advanced technical equipment in its class.',
+    url: 'https://kaspi.kz/shop/p/instax-mini-11-fioletovyi-plenka-20-sht-103580120/?c=750000000#!/item',
+    image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hd2/hd5/65599304269854/instax-mini-11-fioletovyi-plenka-20-sht-103580120-3.jpg',
+    rate: 9
   },
 
 ];
