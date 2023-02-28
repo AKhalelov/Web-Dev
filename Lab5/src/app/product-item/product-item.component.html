@@ -1,0 +1,18 @@
+<div *ngIf="product != undefined" id="item">
+    <h3><a href="{{product.url}}">{{ product.name }}</a></h3>
+    <img src="{{product.image}}">
+    <p *ngIf="product.description" id="descr">{{ product.description }}</p>
+    <p *ngIf="product.rate">Rating: {{ product.rate }}</p>
+    <div>
+        <label>Likes: {{ product.likes }}</label> 
+        <button (click)="pressLike()">❤</button>
+    </div>
+    <div>
+        <button type="button" (click)="share(product)">
+            Share
+        </button>
+        <button type="button" (click)="remove(product)">
+            Remove
+        </button>
+    </div>
+</div>

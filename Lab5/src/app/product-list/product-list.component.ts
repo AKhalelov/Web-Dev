@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-
-import { products } from '../products';
+import { Component, Input, Output } from '@angular/core';
+import { Product, products } from '../products';
 
 @Component({
   selector: 'app-product-list',
@@ -9,14 +8,20 @@ import { products } from '../products';
 })
 
 export class ProductListComponent {
+  @Input() category: string | undefined;
   products = products;
 
-  share(sh:string) {
-    window.open(`https://t.me/share/url?url=${sh}&text=xssxcfscxscsc`);
+  share(product: Product) {
+    window.open(`https://t.me/share/url?url=${product.url}&text=xssxcfscxscsc`);
   }
 
   onNotify() {
     window.alert('You will be notified when the product goes on sale')
+  }
+
+  remove(product: Product) {
+    this.products = this.products.filter( (x) => x.id !== product.id);
+    console.log(this.products);
   }
 }
 
