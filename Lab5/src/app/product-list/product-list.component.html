@@ -2,13 +2,13 @@
 <div id='products' *ngFor="let product of products">
   <img class='product-image' src={{product.image}}>
   <div id="descr">
-  <h3 class='products-overall-desc'>
+  <h3>
     <a [title]="product.name + ' details'" href={{product.url}}>
       {{ product.name }}
     </a>
   </h3>
   <p *ngIf="product.description">Description: {{ product.description }}</p>
-  <p *ngIf="product.price">Price: {{product.price}} ₸</p>
+  <p *ngIf="product.price">Price: {{ product.price }} ₸</p>
   <p *ngIf="product.rate">Rating: {{ product.rate }}</p>
   <button type="button" (click)="share(product.url)">Share</button>
  <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts>
