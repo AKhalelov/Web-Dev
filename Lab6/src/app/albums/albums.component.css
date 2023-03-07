@@ -1,4 +1,3 @@
-/* Стиль для заголовка h1 */
 h1 {
     font-size: 36px;
     font-weight: bold;
@@ -12,7 +11,6 @@ h1 {
 
 }
   
-/* Стиль для поля ввода */
 input[type="text"] {
     font-size: 18px;
     padding: 10px;
@@ -22,7 +20,6 @@ input[type="text"] {
     width: 84.2%;
 }
   
-/* Стиль для кнопки "Add album" */
 button {
     font-size: 18px;
     font-weight: bold;
@@ -38,14 +35,12 @@ button {
   background-color: #f71515;
 }
   
-/* Стиль для списка альбомов */
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
   
-/* Стиль для элемента списка альбомов */
 li {
   font-size: 24px;
   padding: 10px;
@@ -55,7 +50,6 @@ li {
   align-items: center;
 }
   
-/* Стиль для ссылки на страницу альбома */
 a {
   color: #6d50eb;
   text-decoration: none;
