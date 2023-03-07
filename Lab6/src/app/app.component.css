@@ -1,0 +1,21 @@
+/* a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #1C1E21;
+    font-weight: bold;
+    padding: 10px;
+  }
+a:hover {
+    text-decoration: underline 2px;
+    color: #75c964;
+}
+
+ul, li {
+    list-style-type: none;
+    padding: 50px 20px 50px 160px;
+    display: inline;
+}
+
+div {
+    margin-top: 60px;
+} */
