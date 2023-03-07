@@ -11,19 +11,29 @@ import { AlbumService } from '../album.service';
 export class AlbumsComponent implements OnInit{
   albums: Album[];
   loaded: boolean;
+  newAlbum: Album;
   
   constructor(private albumService: AlbumService) {
     this.albums = [];
     this.loaded = true;
+    this.newAlbum = {} as Album;
   }
 
   ngOnInit(): void {
     // this.albums = ALBUMS;
+    this.getAlbums();
+  }
+
+  getAlbums() {
     this.loaded = false;
     this.albumService.getAlbums().subscribe((albums) => {
       this.albums = albums;
       this.loaded = true;
     })
+  }
+
+  addAlbum() {
+    // console.log(this.newAlbum);
   }
   
 }

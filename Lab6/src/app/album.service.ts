@@ -8,14 +8,19 @@ import { Album } from './models';
 })
 
 export class AlbumService {
+  BASE_URL: string = 'https://jsonplaceholder.typicode.com';
 
   constructor(private client: HttpClient) { }
 
   getAlbums(): Observable<Album[]> {
-    return this.client.get<Album[]>('https://jsonplaceholder.typicode.com/albums');
+    return this.client.get<Album[]>(`${this.BASE_URL}/albums`);
   }
 
   getAlbum(id: number): Observable<Album> {
-    return this.client.get<Album>(`https://jsonplaceholder.typicode.com/albums/${id}`);
+    return this.client.get<Album>(`${this.BASE_URL}/albums/${id}`);
+  }
+
+  addAlbum(album: Album): Observable<Album> {
+    return this.client.post<Album>(`${this.BASE_URL}/albums`, album);
   }
 }

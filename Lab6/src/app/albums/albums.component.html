@@ -1,5 +1,10 @@
 <h1>Albums list</h1>
 
+<fieldset>
+    <input type="text" [(ngModule)]="newAlbum.title">
+    <button (click)="addAlbum()">Add album</button>
+</fieldset>
+
 <ul *ngIf="loaded">
     <li *ngFor="let album of albums">
         <a routerLink="/albums/{{album.id}}">
