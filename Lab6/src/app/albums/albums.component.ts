@@ -8,6 +8,7 @@ import { AlbumService } from '../album.service';
   templateUrl: './albums.component.html',
   styleUrls: ['./albums.component.css']
 })
+
 export class AlbumsComponent implements OnInit{
   albums: Album[];
   loaded: boolean;
@@ -34,12 +35,12 @@ export class AlbumsComponent implements OnInit{
 
   addAlbum() {
     this.albumService.addAlbum(this.newAlbum).subscribe((album) => {
-      console.log(album);
+      this.albums.push(album);
+      this.newAlbum = {} as Album;       
     })
   }
 
   deleteAlbum(badAlbum: Album) {
     this.albums = this.albums.filter(album => album.id !== badAlbum.id);
   }
-  
 }
