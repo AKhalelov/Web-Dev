@@ -33,7 +33,13 @@ export class AlbumsComponent implements OnInit{
   }
 
   addAlbum() {
-    // console.log(this.newAlbum);
+    this.albumService.addAlbum(this.newAlbum).subscribe((album) => {
+      console.log(album);
+    })
+  }
+
+  deleteAlbum(badAlbum: Album) {
+    this.albums = this.albums.filter(album => album.id !== badAlbum.id);
   }
   
 }

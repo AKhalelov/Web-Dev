@@ -1,7 +1,7 @@
 <h1>Albums list</h1>
 
 <fieldset>
-    <input type="text" [(ngModule)]="newAlbum.title">
+    <input type="text" [(ngModel)]="newAlbum.title">
     <button (click)="addAlbum()">Add album</button>
 </fieldset>
 
@@ -10,6 +10,7 @@
         <a routerLink="/albums/{{album.id}}">
             {{ album.id }}) {{ album.title }}
         </a>
+        <button (click)="deleteAlbum(album)">Delete</button>
     </li>
 </ul>
 
