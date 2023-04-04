@@ -22,7 +22,6 @@ def product_detail(request, id):
     }}
     return JsonResponse(product_json, json_dumps_params={'indent': 2})
 
-
 def category_list(request):
     categories = Category.objects.all()
     categories_json = [c.to_json() for c in categories]
@@ -36,5 +35,6 @@ def category_detail(request, id):
     return JsonResponse(category_json, json_dumps_params={'indent': 2})
 
 def category_products(request, id):
-    cat_products = [p.to_json() for p in Product.objects.filter(category_id = id)]
-    return JsonResponse({'category products': cat_products}, json_dumps_params={'indent': 2})
+    category = get_object_or_404(Category, id=id)
+    cat_products = [p.to_json() for p in Product.objects.filter(category=category)]
+    return JsonResponse({f'Products of category {category.id}': cat_products}, json_dumps_params={'indent': 2})
