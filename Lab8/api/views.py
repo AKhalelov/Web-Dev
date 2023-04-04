@@ -7,7 +7,7 @@ from .models import Product, Category
 def product_list(request):
     products = Product.objects.all()
     products_json = [p.to_json() for p in products]
-    return JsonResponse(products_json, safe=False)
+    return JsonResponse({'products': products_json})
 
 def product_detail(request, id):
     for product in Product.objects.all():
@@ -18,7 +18,7 @@ def product_detail(request, id):
 def category_list(request):
     categories = Category.objects.all()
     categories_json = [c.to_json() for c in categories]
-    return JsonResponse(categories_json, safe=False)
+    return JsonResponse({'categories': categories_json})
 
 def category_detail(request, id):
     for category in Category.objects.all():
@@ -29,4 +29,4 @@ def category_detail(request, id):
 
 def category_products(request, id):
     cat_products = [p.to_json() for p in Product.objects.filter(category_id = id)]
-    return JsonResponse(cat_products, safe=False)
+    return JsonResponse({'category products': cat_products})
