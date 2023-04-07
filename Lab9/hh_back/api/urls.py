@@ -7,5 +7,5 @@ urlpatterns = [
     path('companies/<int:id>/vacancies', views.get_company_vacancies),
     path('vacancies', views.get_vacancies),
     path('vacancies/<int:id>', views.get_vacancy),
-    path('vacancies/top_ten', views.get_top_ten_vacancies)
+    path('vacancies/top_ten', views.top_ten_vacancies)
 ]

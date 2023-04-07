@@ -32,7 +32,7 @@ class Vacancy(models.Model):
 
     class Meta:
         verbose_name = 'Vacancy'
-        vervose_plural = 'Vacancies'
+        verbose_name_plural = 'Vacancies'
 
     def __str__(self):
         return f'{self.id}: {self.name}, {self.salary}, {self.company}'
