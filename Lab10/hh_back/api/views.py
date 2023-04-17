@@ -1,9 +1,13 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from api.models import Company, Vacancy
-# Create your views here.
 
 def get_companies(request):
+    if request.method == 'GET':
+        companies = Company.objects.all()
+        
+
+
     companies = Company.objects.all()
     companies_json = [comp.to_json() for comp in companies]
     return JsonResponse(companies_json, safe=False, json_dumps_params={'indent': 2})
