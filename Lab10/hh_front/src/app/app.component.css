@@ -1,0 +1,116 @@
+.company-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .company-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .company-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .company-form {
+    margin-bottom: 16px;
+  }
+  
+  .company-label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+  }
+  
+  .company-input {
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 8px;
+  }
+  
+  .company-submit-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .company-submit-button:hover {
+    background-color: #218838;
+  }
+  
+  .company-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .company-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .company-link {
+    flex-grow: 1;
+    margin-right: 8px;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .company-link:hover {
+    color: #0056b3;
+  }
+  
+  .company-delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .company-delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .vacancy-title {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  
+  .vacancy-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .vacancy-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .vacancy-delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .vacancy-delete-button:hover {
+    background-color: #c82333;
+  }

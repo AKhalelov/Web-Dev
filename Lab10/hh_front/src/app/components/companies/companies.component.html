@@ -1,7 +1,0 @@
-<h1>Companies</h1>
-<ul id="company-list">
-    <li *ngFor="let company of companies" class="company-item">
-      <a routerLink="/vacanvcies" class="company-link">{{company.name}}</a>
-      <button class="company-delete-button" (click)="deleteCompany(company.id)">Delete</button>
-    </li>
-</ul>

@@ -8,7 +8,7 @@ import { Company } from '../models'
 })
 export class CompanyService {
 
-  BASE_URL = 'http://localhost:8000';
+  BASE_URL = 'http://localhost:8000/api';
 
   constructor(private client: HttpClient) { }
 
@@ -22,7 +22,7 @@ export class CompanyService {
 
   createCompany(company_name:string, company_description:string, company_city: string, company_address: string): Observable<Company> {
     return this.client.post<Company>(
-      `${this.BASE_URL}/api/categories/`,       
+      `${this.BASE_URL}/categories/`,       
       {
         name: company_name,
         description: company_description,

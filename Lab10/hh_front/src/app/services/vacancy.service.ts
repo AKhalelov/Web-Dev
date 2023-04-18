@@ -8,7 +8,7 @@ import { Vacancy } from '../models';
 })
 export class VacancyService {
 
-  BASE_URL = 'http://localhost:8000';
+  BASE_URL = 'http://localhost:8000/api';
 
   constructor(private client: HttpClient) { }
 
@@ -24,7 +24,7 @@ export class VacancyService {
     return this.client.get<Vacancy>(`${this.BASE_URL}/vacancies/${id}`)
   }
 
-  deleteVacancies(id: number): Observable<any> {
+  deleteVacancy(id: number): Observable<any> {
     return this.client.delete(`${this.BASE_URL}/vacancies/${id}/`)
   } 
 
