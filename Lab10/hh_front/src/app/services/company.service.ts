@@ -8,7 +8,7 @@ import { Company } from '../models'
 })
 export class CompanyService {
 
-  BASE_URL = 'http://localhost:8000/api';
+  BASE_URL = 'http://127.0.0.1:8000/api';
 
   constructor(private client: HttpClient) { }
 
@@ -17,12 +17,12 @@ export class CompanyService {
   }
   
   getCompany(id: number): Observable<Company> {
-    return this.client.get<Company>(`${this.BASE_URL}/companies/${id}`)
+    return this.client.get<Company>(`${this.BASE_URL}/companies/${id}/`)
   }
 
   createCompany(company_name:string, company_description:string, company_city: string, company_address: string): Observable<Company> {
     return this.client.post<Company>(
-      `${this.BASE_URL}/categories/`,       
+      `${this.BASE_URL}/companies/`,       
       {
         name: company_name,
         description: company_description,
@@ -30,9 +30,9 @@ export class CompanyService {
         address: company_address
       }
     )
-  }
+  } 
 
   deleteCompany(id: number): Observable<any> {
-    return this.client.delete(`${this.BASE_URL}/companies/${id}/`)
+    return this.client.delete(`${this.BASE_URL}/companies/${id}`)
   }
 }

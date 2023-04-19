@@ -4,9 +4,11 @@ from rest_framework.views import APIView
 from api.serializers import CompanySerializer, VacancySerializer
 from api.models import Company, Vacancy
 from rest_framework import status
+from django.views.decorators.csrf import csrf_exempt
 
+@csrf_exempt
 @api_view(['GET', 'POST'])
-def get_companies(request):
+def get_companies(request): 
     if request.method == 'GET':
         companies = Company.objects.all()
         serializer = CompanySerializer(companies, many=True)
@@ -14,11 +16,12 @@ def get_companies(request):
 
     if request.method == 'POST':
         serializer = CompanySerializer(data=request.data)
-        if serializer.is_valid():
+        if serializer.is_valid(): 
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+@csrf_exempt
 @api_view(['GET', 'PUT', 'DELETE'])
 def get_company(request, id): 
     try:
@@ -41,6 +44,7 @@ def get_company(request, id):
         company.delete()
         return Response({'deleted': True}, status=status.HTTP_204_NO_CONTENT)
 
+@csrf_exempt
 @api_view(['GET'])
 def get_company_vacancies(request, id):
     if request.method == 'GET':
@@ -49,6 +53,7 @@ def get_company_vacancies(request, id):
         serializer = VacancySerializer(vacancies, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
+@csrf_exempt
 class VacanciesAPIView(APIView):
     def get(self, request):
         vacancies = Vacancy.objects.all()
@@ -62,6 +67,7 @@ class VacanciesAPIView(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+@csrf_exempt
 class VacancyDetailAPIView(APIView):
     def get_object(self, id):
         try:
@@ -87,8 +93,9 @@ class VacancyDetailAPIView(APIView):
         vacancy.delete()
         return Response({'deleted': True}, status=status.HTTP_204_NO_CONTENT)
 
+@csrf_exempt
 @api_view(['GET'])
-def top_ten_vacancies(request):
+def top_ten_vacancies(request): 
     if request.method == 'GET':
         vacancies = Vacancy.objects.all().order_by('-salary')[:10]
         serializer = VacancySerializer(vacancies, many=True)
